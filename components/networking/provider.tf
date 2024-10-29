@@ -6,9 +6,9 @@ terraform {
     }
   }
   backend "azurerm" {}
-
 }
 
 provider "azurerm" {
+  subscription_id = var.azure_account_id
   features {}
 }
